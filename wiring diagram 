@@ -1,0 +1,25 @@
+                 SMART SECURITY SYSTEM
+                   Wiring Diagram
+
+              +----------------------+
+              |        ESP32         |
+              |                      |
+   3.3V ------+--------------------+-----------------> PIR VCC
+    GND ------+--------------------+-----------------> PIR GND
+ GPIO13 ------+-------------------------------------> PIR OUT
+
+  GPIO2 ------+----[220Ω Resistor]-----> LED (+)
+    GND ------+-------------------------> LED (-)
+
+  GPIO4 ------+-------------------------> Buzzer (+)
+    GND ------+-------------------------> Buzzer (-)
+              +----------------------+
+
+                     Components
+                -------------------
+                ESP32 Dev Board
+                PIR Motion Sensor
+                Active Buzzer
+                LED + 220Ω Resistor
+                Breadboard
+                Jumper Wires
