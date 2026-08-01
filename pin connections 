@@ -1,0 +1,13 @@
+SMART SECURITY SYSTEM – PIN CONNECTIONS
+
+ESP32 Pin           → Component
+-----------------------------------------
+3.3V                → PIR Sensor VCC
+GND                 → PIR Sensor GND
+GPIO 13             → PIR Sensor OUT
+
+GPIO 2              → LED (+) through 220Ω resistor
+GND                 → LED (-)
+
+GPIO 4              → Active Buzzer (+)
+GND                 → Active Buzzer (-)
