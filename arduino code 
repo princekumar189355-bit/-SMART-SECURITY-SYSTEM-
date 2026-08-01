@@ -1,0 +1,40 @@
+// Smart Security System using ESP32
+// PIR Sensor + LED + Buzzer
+
+#define PIR_PIN 13      // PIR OUT pin
+#define LED_PIN 2       // Built-in LED (or external LED)
+#define BUZZER_PIN 4    // Buzzer pin
+
+void setup() {
+  pinMode(PIR_PIN, INPUT);
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+
+  digitalWrite(LED_PIN, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
+
+  Serial.begin(115200);
+  Serial.println("Smart Security System Started");
+}
+
+void loop() {
+
+  int motion = digitalRead(PIR_PIN);
+
+  if (motion == HIGH) {
+    Serial.println("Motion Detected!");
+
+    digitalWrite(LED_PIN, HIGH);
+    digitalWrite(BUZZER_PIN, HIGH);
+
+    delay(3000); // Alarm ON for 3 seconds
+  }
+  else {
+    Serial.println("No Motion");
+
+    digitalWrite(LED_PIN, LOW);
+    digitalWrite(BUZZER_PIN, LOW);
+
+    delay(500);
+  }
+}
