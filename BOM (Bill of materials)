@@ -1,0 +1,12 @@
+Bill of Materials (BOM)
+
+Item| Quantity| Description
+ESP32 Development Board| 1| Main microcontroller with Wi-Fi
+HC-SR501 PIR Motion Sensor| 1| Detects human motion
+Active Buzzer| 1| Generates alarm sound
+5mm LED| 1| Visual status indicator
+220Ω Resistor| 1| Current limiting resistor for LED
+Breadboard| 1| Prototype board
+Male-to-Male Jumper Wires| 10| Circuit connections
+USB Cable| 1| Programming and power
+5V USB Power Supply| 1| Power source for ESP32
